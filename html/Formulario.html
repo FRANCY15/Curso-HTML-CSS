@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario</title>
+</head>
+<body>
+    <h1>BIENVENIDOS!</h1>
+    <h2>Este es mi sitio web</h2>
+    <p><strong> En <em>2022</em> corre tras tus sueños.</strong> Si no los alcanzas, ¡al menos adelgazas!</p>
+
+    <h2>Menú</h2>
+    <a href="../index.html"> Ir a la página principal </a>
+    <a href="../html/Listas.html"> Listas y tipos de listas </a>
+    <a href="../html/Tablas.html"> Tablas y ejemplos </a>
+    <a href="Formulario.html"> Formulario </a>
+    <br>
+    <br>
+
+    <form >
+        <fieldset>
+            <legend>Mi primer formulario</legend>
+        <p>
+            <label for="Nombres">Nombre Completo: </label> 
+            <input type="text" name="nombre" id="Nombres" placeholder="Ingrese su nombre completo"> <!--tipo texto-->
+        </p>
+        <p>
+            <label for="password">Contraseña: </label>
+            <input type="password" name="password" id="password" placeholder="Ingrese su clave" maxlength="8"><!--sirve para condicionar la longitud del texto a ingresar-->
+        </p>
+        <p>
+            <label for="email">Ingrese su email: </label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su e-mail" required autofocus>
+        </p>
+        <p>
+            <label for="fecha">Fecha: </label>
+            <input type="datetime-local" name="fecha" id="fecha">
+        </p>
+        <p>
+            <label for="archivo"> Adjuntar archivo </label>
+            <input type="file" name="archivo" id="archivo"> <!--tipo file para cargar archivos-->
+        </p>
+        <p>
+            <label for="mes"> Fecha de nacimiento </label>
+            <input type="month" name="mes" id="mes"> <!--tipo month para ingresar mes-->
+        </p>
+        <p>
+            <label for="numero"> Número de contacto </label>
+            <input type="number" name="numero" id="numero" max="10" min="7"> <!--tipo number solo para ingresar números, adicionalmente los atributos max y min para condicionar un rango numerico los campos number-->
+        </p>
+        <p>
+            <label for="rango"> Rango de edad</label>
+            <input type="range" name="rango" id="rango"> <!--tipo range solo para ingresar números-->
+        </p>
+        <p>
+            <label for="buscar"> Buscar </label>
+            <input type="search" name="buscar" id="buscar"> <!--tipo search para busqueda-->
+        </p>
+        <p>
+            <label for="telefono"> Teléfono </label>
+            <input type="tel" name="telefono" id="telefono"> <!--tipo tel solo para ingresar telefono, y se active el teclado en el computador-->
+        </p>
+        <p>
+            <label for="hora"> Hora </label>
+            <input type="time" name="hora" id="hora"> <!--tipo time formato hora-->
+        </p>
+        <p>
+            <label for="url"> URL </label>
+            <input type="url" name="url" id="url"> <!--tipo url para ingresar direccion url-->
+        </p>
+        <p>
+            <label for="semana"> Semana </label>
+            <input type="week" name="semana" id="semana"> <!--tipo week indica el numero de la semana seleccionada-->
+        </p>
+        <p> <!--esta es una opción para elegir una opción entre varias-->
+            <label for="select"> Elija una opción </label>
+            <select name="select" id="">
+                <option value="">Esto es una opción</option>
+                <option value="">Esto es otra opción</option>
+                <option value="">Esto es la última opción</option>
+            </select>
+        </p>
+        <p>
+            <label for="comida"> Elige tu comida favorita:  </label>
+            <input type="radio" name="comida"> Sopa 
+            <input type="radio" name="comida"> Hamburguesa 
+            <input type="radio" name="comida"> Pollo 
+            <input type="radio" name="comida"> Pizza 
+        </p>
+
+        <p>
+            <label for="fruta">Selecciona tu fruta o frutas favortitas: </label>
+            <input type="checkbox" name="comida"> Sandia
+            <input type="checkbox" name="comida"> Guanabana 
+            <input type="checkbox" name="comida"> Pera
+            <input type="checkbox" name="comida"> Manzana 
+        </p>
+
+        <p>
+            <label for="color"> Selecciona tu color favortito: </label>
+            <input type="color" name="color">
+        </p>
+
+        <p>
+            <label for="texto">Ingrese sus comentarios: </label>
+            <textarea name="texto" id="" cols="80" rows="10" disabled></textarea><!--el atributo disabled, sirve para deshabilitar un campo-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" name="" id="">
+        </p>
+
+    </fieldset>
+    </form>
+    
+</body>
+</html>
